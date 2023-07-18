@@ -8,7 +8,7 @@ st.session_state['date'] = dtm.today().strftime('%d.%m.%Y')
 st.write(st.session_state['date'])
 hcolss = st.columns(2)
 with hcolss[0]:
-    st.markdown('<p style="font-size:52px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:62px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
 with hcolss[-1]:
     ac = st.columns(4)
     with ac[-1]:
