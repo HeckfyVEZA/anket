@@ -14,5 +14,6 @@ if cb:
     st.session_state['stage'] = 2
     st.session_state['flag'] = True
 else:
+    st.session_state['stage'] = 0
     st.session_state['flag'] = False
 st.session_state
