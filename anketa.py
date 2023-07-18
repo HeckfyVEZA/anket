@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 st.session_state['date'] = dtm.today().strftime('%d.%m.%Y')
 st.write(st.session_state['date'])
-hcolss = st.columns(6)
+hcolss = st.columns(4)
 with hcolss[0]:
     st.markdown('<p style="font-size:48px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
 with hcolss[-1]:
