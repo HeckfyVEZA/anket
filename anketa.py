@@ -1,19 +1,7 @@
 import streamlit as st
-
-try:
-    flag = st.session_state['flag']
-except:
-    flag = False
-
-if not flag:
-    st.session_state['stage'] = 0
-if st.session_state['stage'] == 0:
-    st.write('hui')
-cb = st.checkbox('dfhgjdhfg')
-if cb:
-    st.session_state['stage'] = 2
-    st.session_state['flag'] = True
-else:
-    st.session_state['stage'] = 0
-    st.session_state['flag'] = False
-st.session_state
+a = 5
+match a:
+    case 5:
+        st.write('yes')
+    case _:
+        st.write('no')
