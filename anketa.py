@@ -19,7 +19,7 @@ with hcol[0]:
     st.header(heads[0])
 st.session_state['Заполнил'] = st.text_input('Заполнил')
 st.markdown('---')
-# st.markdown('<p style="font-size:598px">ТЕКСТ</p>', unsafe_allow_html=True)
+# st.markdown('<p style="font-size:630px">ТЕКСТ</p>', unsafe_allow_html=True)
 st.header('Основная информация')
 cols_1 = st.columns(2)
 with cols_1[0]:
