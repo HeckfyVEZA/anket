@@ -6,13 +6,15 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 st.session_state['date'] = dtm.today().strftime('%d.%m.%Y')
 st.write(st.session_state['date'])
-st.markdown('<p style="font-size:48px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
+hcolss = st.columns(6)
+with hcolss[0]:
+    st.markdown('<p style="font-size:48px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
+with hcolss[-1]:
+    st.image('https://i.postimg.cc/15MjB7kJ/image.png')
 heads = ('«Армия-2023»', '«Нева-2023» ')
 hcol = st.columns(6)
 with hcol[0]:
     st.header(heads[0])
-with hcol[-1]:
-    st.image('https://i.postimg.cc/15MjB7kJ/image.png')
 st.session_state['Заполнил'] = st.text_input('Заполнил')
 st.markdown('---')
 # st.markdown('<p style="font-size:598px">ТЕКСТ</p>', unsafe_allow_html=True)
