@@ -10,7 +10,9 @@ hcolss = st.columns(2)
 with hcolss[0]:
     st.markdown('<p style="font-size:48px; color:#26822F"><b>АНКЕТА ПОСЕТИТЕЛЯ ВЫСТАВКИ</b></p>', unsafe_allow_html=True)
 with hcolss[-1]:
-    st.image('https://i.postimg.cc/15MjB7kJ/image.png')
+    ac = st.columns(3)
+    with ac[-1]:
+        st.image('https://i.postimg.cc/15MjB7kJ/image.png')
 heads = ('«Армия-2023»', '«Нева-2023» ')
 hcol = st.columns(6)
 with hcol[0]:
