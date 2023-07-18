@@ -1,0 +1,1 @@
+pipx install poetry --python python3.10
